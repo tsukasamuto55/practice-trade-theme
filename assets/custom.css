@@ -1,0 +1,37 @@
+.test-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+
+.downloadable-content {
+  background-color: lightgray;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.downloadable-content:hover {
+  background-color: lightblue;
+  color: white;
+}
+
+.downloadable-content::after {
+  content: url("https://cdn.shopify.com/s/files/1/0657/8592/1709/files/download_1.png?v=1719945915");
+  position: absolute;
+  bottom: -.8rem;
+  right: 1rem;
+}
+
+ /* Buy-Button in the Home page */
+.buy-button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.homepage-product-form__quantity {
+  margin-bottom: 0;
+}
